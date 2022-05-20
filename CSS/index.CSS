@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+}
+header h2
+{
+    color:white;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+header ul
+{
+    display: flex;
+}
+header ul li
+{
+    margin: 0px 10px;
+}
+header ul li a
+{
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition-duration: 0.4s;
+}
+header ul li a:hover
+{
+    color: black;
+    background-color:white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.banner
+{
+    width: 100%;
+    /* background-color: blue; */
+    background: url(../images/image-header.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.banner .headerconten
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner .headerconten h2
+{
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+.brand
+{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+}
+.brand .leftside
+{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand .leftside .leftsidecontent
+{
+    /* width: 60%; */
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 60px;
+}
+.brand .leftside .leftsidecontent h2
+{
+    color: #222;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 1.3px;
+}
+.brand .leftside .leftsidecontent p
+{
+    color: #888;
+    line-height: 25px;
+}
+.brand .leftside .leftsidecontent button
+{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    padding: 4px 10px;
+    background-color: transparent;
+    font-size: 17px;
+    /* margin-right: 100px; */
+    text-transform: capitalize;
+    position: relative;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+.brand .leftside .leftsidecontent button::before
+{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 0%;
+    right: 1.5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+.brand .leftside .leftsidecontent button:hover::before
+{
+    width: 100%;
+}
+.brand .rightside
+{
+    width: 50%;
+    height: 100%;
+    background: url(../images/image-transform.jpg);
+    background-size: cover
+}
+.brand2
+{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+}
+.brand2 .leftside2
+{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand2 .leftside2 .leftsidecontent
+{
+    /* width: 60%; */
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 60px;
+}
+.brand2 .leftside2 .leftsidecontent h2
+{
+    color: #222;
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 1.3px;
+}
+.brand2 .leftside2 .leftsidecontent p
+{
+    color: #888;
+    line-height: 25px;
+}
+.brand2 .leftside2 .leftsidecontent button
+{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    padding: 4px 10px;
+    background-color: transparent;
+    font-size: 17px;
+    /* margin-right: 100px; */
+    text-transform: capitalize;
+    position: relative;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+.brand2 .leftside2 .leftsidecontent button::before
+{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 0%;
+    right: 1.5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+.brand2 .leftside2 .leftsidecontent button:hover::before
+{
+    width: 100%;
+}
+.brand2 .rightside2
+{
+    width: 50%;
+    height: 100%;
+    background: url(../images/image-stand-out.jpg);
+    background-size: cover
+}
