@@ -76,8 +76,16 @@ header ul li a:hover
 {
     width: 100%;
     height: 55vh;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: 1s;
     display: flex;
     align-items: center;
+}
+.brand.active
+{
+    transform: translate(0);
+    opacity: 1;
 }
 .brand .leftside
 {
@@ -90,12 +98,10 @@ header ul li a:hover
 }
 .brand .leftside .leftsidecontent
 {
-    /* width: 60%; */
     display: flex;
     justify-content: start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    /* border: 1px solid black; */
     padding: 60px;
 }
 .brand .leftside .leftsidecontent h2
@@ -153,6 +159,14 @@ header ul li a:hover
     height: 55vh;
     display: flex;
     align-items: center;
+    transform: translateY(120px);   
+    opacity: 0;
+    transition: 1s;
+}
+.brand2.active
+{
+    opacity: 1;
+    transform: translate(0);
 }
 .brand2 .leftside2
 {
@@ -168,7 +182,7 @@ header ul li a:hover
     /* width: 60%; */
     display: flex;
     justify-content: start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     /* border: 1px solid black; */
     padding: 60px;
@@ -230,6 +244,14 @@ header ul li a:hover
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    transform: translateY(120px);
+    transition: 1s;
+}
+.twoimage.active
+{
+    opacity: 1;
+    transform: translate(0);
 }
 .twoimage .leftimg
 {
@@ -280,4 +302,169 @@ header ul li a:hover
     margin-top: 10px;
     text-align: justify;
     color: rgb(65, 93, 113);
+}
+.testimonials
+{
+    width: 100%;
+    height: 70vh;
+    background-color: aliceblue;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials h2
+{
+    color: rgb(11, 34, 75);
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.testimonials .cards
+{
+    /* width: 400px; */
+    height: 400px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: 1.5s;
+    transform: translateY(120px);
+}
+.testimonials .cards.active
+{
+    opacity: 1;
+    transform: translate(0);
+}
+.testimonials .cards .card
+{
+    width: 400px;
+    height: 380px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.testimonials .cards .card:hover
+{
+    box-shadow: 0px 0px 10px rgb(219, 217, 217);
+    transform: translateY(-5px);
+
+}
+.testimonials .cards .card img
+{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonials .cards .card p
+{
+    color: #888;
+    text-align: center;
+    font-size: 16px;
+}
+.testimonials .cards .card h4
+{
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.image
+{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image .images
+{
+    height: 100%;
+    width: 25%;
+    background: url(../images/image-gallery-cone.jpg);
+    background-size: cover;
+}
+.image .images2
+{
+    height: 100%;
+    width: 25%;
+    background: url(../images/image-gallery-milkbottles.jpg);
+    background-size: cover;
+}
+.image .images3
+{
+    height: 100%;
+    width: 25%;
+    background: url(../images/image-gallery-orange.jpg);
+    background-size: cover;
+}
+.image .images4
+{
+    height: 100%;
+    width: 25%;
+    background: url(../images/image-gallery-sugar-cubes.jpg);
+    background-size: cover;
+}
+footer
+{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #79B4B7;
+}
+footer h2
+{
+    color:rgb(80, 56, 56);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+footer .links
+{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+footer .links ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .links ul li
+{
+    margin: 0px 30px;
+}
+footer .links ul li a
+{
+    font-size: 18px;
+}
+footer .icons
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+    /* padding: 30px; */
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+footer .icons img
+{
+    width: 30px;
+    height: 30px;
+    margin: 0px 20px;
+    object-fit: cover;
 }

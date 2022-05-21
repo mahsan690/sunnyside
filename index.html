@@ -7,6 +7,7 @@
   <title>Sunny-side</title>
   <link rel="stylesheet" href="CSS/index.CSS">
   <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
 
@@ -26,7 +27,8 @@
   <img src="images/icon-arrow-down.svg" alt="">
 </div>
 </section>
-<section class="brand">
+
+<section class="brand" id="section1">
   <div class="leftside">
     <div class="leftsidecontent">
       <h2>transform your brand</h2>
@@ -37,10 +39,11 @@
   </div>
   <div class="rightside"></div>
 </section>
-<section class="brand2">
+
+<section class="brand2" id="section2">
   <div class="rightside2"></div>
   <div class="leftside2">
-    <div class="leftsidecontent">
+    <div id="movecontent" class="leftsidecontent">
       <h2>stand out to the right audience</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odio officia fugit! Tempore dignissimos eveniet earum, a necessitatibus rem neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, eius!
       </p>
@@ -48,7 +51,7 @@
     </div>
   </div>
 </section>
-<section class="twoimage">
+<section class="twoimage" id="section3">
   <div class="leftimg">
     <div class="imgcontent">
       <h2>graphic design</h2>
@@ -62,5 +65,62 @@
     </div>
   </div>
 </section>
+
+<section class="testimonials">
+  <h2>client testimonials</h2>
+  <div class="cards" id="section4">
+      <div class="card">
+        <img src="images/image-emily.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perferendis.</p>
+        <h4>emily r.</h4>
+      </div>
+      <div class="card">
+        <img src="images/image-thomas.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perferendis.</p>
+        <h4>thomas s.</h4>
+      </div>
+      <div class="card">
+        <img src="images/image-jennie.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, molestias. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, perferendis.</p>
+        <h4>jennie f.</h4>
+      </div>
+  </div>
+</section>
+<section class="image">
+  <div class="images"></div>
+  <div class="images2"></div>
+  <div class="images3"></div>
+  <div class="images4"></div>
+</section>
+<footer>
+  <h2>sunnyside</h2>
+  <div class="links">
+    <ul>
+      <li>about</li>
+      <li>services</li>
+      <li>projects</li>
+    </ul>
+  </div>
+  <div class="icons">
+    <img src="images/icon-facebook.svg" alt="">
+    <img src="images/icon-instagram.svg" alt="">
+    <img src="images/icon-pinterest.svg" alt="">
+    <img src="images/icon-twitter.svg" alt="">
+  </div>
+</footer>
+
+
+
+
+
+
+  <script>
+    window.addEventListener("scroll",function(){
+      document.getElementById("section1").classList.toggle("active",scrollY > 200)
+      document.getElementById("section2").classList.toggle("active",scrollY > 500)
+      document.getElementById("section3").classList.toggle("active",scrollY > 900)
+      document.getElementById("section4").classList.toggle("active",scrollY > 1400)
+    })
+    </script>
 </body>
 </html>
