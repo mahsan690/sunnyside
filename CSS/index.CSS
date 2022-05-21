@@ -222,3 +222,62 @@ header ul li a:hover
     background: url(../images/image-stand-out.jpg);
     background-size: cover
 }
+.twoimage
+{
+    width: 100%;
+    height: 60vh;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.twoimage .leftimg
+{
+    width: 50%;
+    height: 100%;
+    background: url(../images/image-graphic-design.jpg);
+}
+.twoimage .leftimg .imgcontent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 350px 50px;
+}
+.twoimage .leftimg .imgcontent h2
+{
+    color: rgb(51, 59, 81);
+    text-transform: capitalize;
+}
+.twoimage .leftimg .imgcontent p
+{
+    margin-top: 10px;
+    text-align: justify;
+    color: rgb(65, 93, 113);
+}
+.twoimage .rightimg
+{
+    width: 50%;
+    height: 100%;
+    background: url(../images/image-photography.jpg);
+}
+.twoimage .rightimg .imgcontent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 350px 50px;
+}
+.twoimage .rightimg .imgcontent h2
+{
+    color: rgb(51, 59, 81);
+    text-transform: capitalize;
+}
+.twoimage .rightimg .imgcontent p
+{
+    margin-top: 10px;
+    text-align: justify;
+    color: rgb(65, 93, 113);
+}
