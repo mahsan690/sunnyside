@@ -265,18 +265,20 @@ header ul li a:hover
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 350px 50px;
+    margin: 250px 50px;
 }
 .twoimage .leftimg .imgcontent h2
 {
-    color: rgb(51, 59, 81);
+    /* color:#222; */
+    color: rgba(255, 255, 255, 0.746);
     text-transform: capitalize;
 }
 .twoimage .leftimg .imgcontent p
 {
     margin-top: 10px;
-    text-align: justify;
-    color: rgb(65, 93, 113);
+    text-align: center;
+    /* color: rgba(34, 34, 34, 0.596); */
+    color: aliceblue;
 }
 .twoimage .rightimg
 {
@@ -290,23 +292,24 @@ header ul li a:hover
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 350px 50px;
+    margin: 250px 50px;
 }
 .twoimage .rightimg .imgcontent h2
 {
-    color: rgb(51, 59, 81);
+    color: rgba(255, 255, 255, 0.746);
     text-transform: capitalize;
 }
 .twoimage .rightimg .imgcontent p
 {
     margin-top: 10px;
-    text-align: justify;
-    color: rgb(65, 93, 113);
+    text-align: center;
+    /* color: rgba(34, 34, 34, 0.596); */
+    color: aliceblue;
 }
 .testimonials
 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-color: aliceblue;
     padding: 30px 50px;
     display: flex;
